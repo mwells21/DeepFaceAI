@@ -26,4 +26,4 @@ new_model = keras.Model(inputs = base_input,outputs = final_out)
 
 new_model.summary()
 
-new_model.compile(loss = "sparse_categorical_crossentropy",optimizer = "adam", metrics = ["accuracy"])
+# new_model.compile(loss = "sparse_categorical_crossentropy",optimizer = "adam", metrics = ["accuracy"])
