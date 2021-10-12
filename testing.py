@@ -11,11 +11,13 @@ model = tf.keras.models.load_model("model_15.h5")
 Datadirectory = "data/test/"  # Training data
 Classes = ["0", "1", "2", "3", "4", "5", "6"]
 
+img_size = 224
+
 
 print("PRE PROCESSING ....... ")
-training_Data = []
+testing_Data = []
 
-def create_training_Data():
+def create_testing_Data():
     for category in Classes:
         path = os.path.join(Datadirectory, category)
         class_num = Classes.index(category)
@@ -23,24 +25,24 @@ def create_training_Data():
             try:
                 img_array = cv2.imread(os.path.join(path, img))
                 new_array = cv2.resize(img_array, (img_size, img_size))
-                training_Data.append([new_array, class_num])
+                testing_Data.append([new_array, class_num])
             except Exception as e:
                 pass
 
 
-create_training_Data()
+create_testing_Data()
 
-print(len(training_Data))
+print(len(testing_Data))
 
 import random
 print("---- Shuffling ----")
-random.shuffle(training_Data)
+random.shuffle(testing_Data)
 
 X = []
 Y = []
 
 print("---- Appending ----")
-for features, label in training_Data:
+for features, label in testing_Data:
     X.append(features)
     Y.append(label)
 
