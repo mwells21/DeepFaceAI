@@ -3,7 +3,7 @@
  Michael Wells\
  Michael Kent\
  Matthew Spivak\
- Will Dinneen\
+ Will Dinneen
 
 ## Data 
 
