@@ -59,3 +59,8 @@ Y = np.array(Y,dtype= 'uint8')
 # Normalize
 print("---- Normalize ----")
 X = X/255.0
+
+# Test Set
+print("Testing.....")
+results = model.evaluate(X, Y)
+print("test loss, test acc:", results)
