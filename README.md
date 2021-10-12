@@ -1,5 +1,5 @@
 # Pal-Bot
- Realtime facial and emotion recognition using TensorFlow. Created for Johns Hopkins Carey Business School AI course by:
+ Realtime facial and emotion recognition using TensorFlow. Created for Johns Hopkins Carey Business School AI course by: /n
  Michael Wells 
  Michael Kent
  Matthew Spivak 
