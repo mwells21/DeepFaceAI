@@ -1,7 +1,7 @@
-## Pal-Bot
+# Pal-Bot
  Realtime facial and emotion recognition
 
-# Data 
+## Data 
 
 Google's FER 2013 Dataset:
 https://www.kaggle.com/msambare/fer2013
@@ -15,7 +15,7 @@ https://www.kaggle.com/msambare/fer2013
 - Surprise (n = 3171)
 - Neutral (n = 1233)
 
-# Model
+## Model
 
 Google MobileNetV2:
 https://arxiv.org/abs/1801.04381
@@ -24,7 +24,7 @@ Facial Recongnition:
 https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
 
-# Credit
+## Credit
 Based on the following youtube video:
 https://www.youtube.com/watch?v=avv9GQ3b6Qg
 
