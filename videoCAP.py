@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load Model
-model = tf.keras.models.load_model("model_15.h5")
+model = tf.keras.models.load_model("model_20_test.h5")
 
 path = "haarcascade_frontalface_default.xml"
 font_scale = 1.5

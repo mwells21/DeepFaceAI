@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-model = tf.keras.models.load_model("model_15.h5")
+model = tf.keras.models.load_model("model_20_test.h5")
 
 # Testing Dir
-Datadirectory = "data/test/"  # Training data
+Datadirectory = "data/train/"  # Training data
 Classes = ["0", "1", "2", "3", "4", "5", "6"]
 
 img_size = 224
@@ -46,8 +46,8 @@ for features, label in testing_Data:
     X.append(features)
     Y.append(label)
 
-X = X[1:200]
-Y = Y[1:200]
+X = X[1:1000]
+Y = Y[1:1000]
 
 
 

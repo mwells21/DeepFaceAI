@@ -4,18 +4,18 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 # ---- Testing ------
-img_array = cv2.imread("data/train/0/Training_964885.jpg")
-print(img_array.shape)
-plt.imshow(img_array)
-plt.show()
+# img_array = cv2.imread("data/train/0/Training_964885.jpg")
+# print(img_array.shape)
+# plt.imshow(img_array)
+# plt.show()
 
-Datadirectory = "data/train/"  # Training data
+Datadirectory = "data/test/"  # Training data
 Classes = ["0", "1", "2", "3", "4", "5", "6"]
 
 img_size = 224
-new_array = cv2.resize(img_array, (img_size, img_size))
-plt.imshow(new_array)
-plt.show()
+# new_array = cv2.resize(img_array, (img_size, img_size))
+# plt.imshow(new_array)
+# plt.show()
 
 
 # ---- Pre Processing -----
@@ -51,8 +51,8 @@ for features, label in training_Data:
     X.append(features)
     Y.append(label)
 
-X = X[1:1000]
-Y = Y[1:1000]
+#X = X[1:2000]
+#Y = Y[1:2000]
 
 
 
@@ -90,6 +90,6 @@ new_model.summary()
 
 new_model.compile(loss = "sparse_categorical_crossentropy",optimizer = "adam", metrics = ["accuracy"])
 
-new_model.fit(X,Y,epochs = 15)
+new_model.fit(X,Y,epochs = 20)
 
-new_model.save('model_15.h5')
+new_model.save('model_20_test.h5')
